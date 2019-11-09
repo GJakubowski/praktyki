@@ -1,0 +1,39 @@
+@import 'setings';
+
+body {
+    header {
+        nav {
+            @include nav;
+
+            .menu {
+                li {
+                    @include li;
+                }
+
+                a {
+                    @include a;
+                }
+            }
+        }
+    }
+
+    h1 {
+        @include h1;
+    }
+
+    .view-group {
+        input.form-control {
+            border: 2px solid blue;
+        }
+    }
+
+    .grid-container {
+        @include grid-container;
+
+        .grid-item {
+            @include grid-item;
+        }
+
+    }
+
+}
